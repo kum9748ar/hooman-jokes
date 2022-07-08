@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mix two API's</title>
+  </head>
+  <style>
+    body {
+      background: rebeccapurple;
+      color: white;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .app {
+      border: 2px solid red;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 16px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+    button {
+      margin: 0.5rem;
+      border: none;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 16px;
+      font-weight: 400;
+      background: pink;
+    }
+    button:hover {
+      background-color: red;
+    }
+
+    button:active {
+      background-color: royalblue;
+      box-shadow: 0 5px black;
+      transform: translateY(4px);
+    }
+  </style>
+  <body>
+    <h1>Human is a Joke teller</h1>
+    <div class="app">
+      <h2>Hi I'm Hooman</h2>
+      <img src="" id="dog_img" />
+      <p>Hooman says</p>
+      <p id="joke"></p>
+      <button class="btn" onclick="location.reload()">
+        Try something else
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
